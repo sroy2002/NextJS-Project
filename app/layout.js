@@ -1,16 +1,10 @@
 import localFont from "next/font/local";
+import { SlBulb } from "react-icons/sl";
+import { CiHeart } from "react-icons/ci";
+import { PiShoppingCartSimpleLight } from "react-icons/pi";
+import { FaAngleDown } from "react-icons/fa6";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Search from "./Components/Search";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,9 +14,33 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        <nav className="flex gap-4 items-center justify-between">
+          <div>weframetech</div>
+          <Search />
+          <div className="flex gap-2 items-center">
+            <div className="flex gap-1 items-center">
+              <SlBulb />
+              <p>Inspiration</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <CiHeart />
+              <p>Mes favoris</p>
+              <span className="bg-slate-200 px-4 py-1 rounded-2xl text-sm ml-1">
+                24
+              </span>
+            </div>
+            <div className="flex gap-1 items-center bg-[#0093D0] border-[#007AAD] text-white p-3 rounded-md">
+              <PiShoppingCartSimpleLight />
+              <p>Panier</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <div className="h-[44px] w-[44px] bg-[#d7dcdd] rounded-full"></div>
+              <p>FR</p>
+              <FaAngleDown />
+            </div>
+          </div>
+        </nav>
         {children}
       </body>
     </html>
