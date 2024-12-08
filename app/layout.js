@@ -3,6 +3,9 @@ import { SlBulb } from "react-icons/sl";
 import { CiHeart } from "react-icons/ci";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { FaAngleDown } from "react-icons/fa6";
+import Image from "next/image";
+import logo from "@/public/Group.jpg";
+import branding from "@/public/Groupp.jpg";
 import "./globals.css";
 import Search from "./Components/Search";
 
@@ -16,22 +19,26 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <nav className="flex gap-4 items-center justify-between">
-          <div>weframetech</div>
+          <div className="flex flex-col gap-2 items-center justify-center">
+            <Image src={logo} width={60} height={60} alt="logo"></Image>
+            <Image src={branding} width={130} height={130} alt="brand name"></Image>
+          
+          </div>
           <Search />
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-4 items-center text-[0.9rem]">
             <div className="flex gap-1 items-center">
-              <SlBulb />
+              <SlBulb size={17}/>
               <p>Inspiration</p>
             </div>
             <div className="flex gap-1 items-center">
-              <CiHeart />
+              <CiHeart size={20} />
               <p>Mes favoris</p>
-              <span className="bg-slate-200 px-4 py-1 rounded-2xl text-sm ml-1">
+              <span className="bg-slate-200 px-3 py-1 rounded-2xl text-sm ml-1">
                 24
               </span>
             </div>
             <div className="flex gap-1 items-center bg-[#0093D0] border-[#007AAD] text-white p-3 rounded-md">
-              <PiShoppingCartSimpleLight />
+              <PiShoppingCartSimpleLight size={20}/>
               <p>Panier</p>
             </div>
             <div className="flex gap-1 items-center">

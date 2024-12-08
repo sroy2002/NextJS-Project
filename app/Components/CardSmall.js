@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 function CardSmall({ photo, title, subtitle, price, quantity, altText }) {
   return (
-    <div >
+    <div className="hover:cursor-pointer" >
         <div className="h-[9rem] w-[9rem] border-[#c0c0c0] border-[0.05rem]">
             <Image src={photo} alt={altText}></Image>
         </div>

@@ -88,7 +88,7 @@ function Search() {
       {/* search suggestions dropdown list w-[51.7rem]*/}
 
       {isSearch && searchTerm && (
-        <div className="flex gap-4 absolute top-[90px]   h-auto border border-slate-300 shadow-md bg-white p-4 rounded-md">
+        <div className="flex gap-4 absolute top-[90px]  h-auto border border-slate-300 shadow-md bg-white p-4 rounded-md transition-all ">
           <div>
             <p className="text-sm text-slate-400 mb-4 ">Suggestions</p>
             <div>
@@ -158,7 +158,7 @@ function Search() {
                 altText={"fork-img"}
               />
             </div>
-            <div className="w-full px-4 py-2 border border-[#c0c0c0] text-center mt-8 mb-2 rounded-sm">Voir tous les résultats</div>
+            <div className="w-full px-4 py-2 border border-[#c0c0c0] text-center mt-8 mb-2 rounded-sm hover:cursor-pointer">Voir tous les résultats</div>
           </div>
         </div>
       )}
