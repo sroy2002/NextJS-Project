@@ -33,7 +33,7 @@ function Carousal() {
       </div>
       <div
         ref={scrollRef}
-        className="flex gap-4 overflow-x-hidden no-scrollbar px-4"
+        className="flex gap-4 overflow-x-hidden no-scrollbar"
         style={{
             scrollSnapType: "x mandatory", 
             height: "auto",

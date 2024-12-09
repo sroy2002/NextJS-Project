@@ -5,7 +5,6 @@ import localFont from "next/font/local";
 import { HiOutlinePlus } from "react-icons/hi2";
 import Carousal from "./Components/Carousal";
 
-
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -21,7 +20,7 @@ export default function Home() {
       <main className="">
         <HeroSection />
         {/* // Description Section  */}
-        <div className="px-6 flex gap-4">
+        <div className="mx-6 px-6 flex gap-4">
           <div className="w-[50%]">
             <p className={`${inter.className} mb-2`}>Description produit</p>
             <p className={`${geist.className} text-sm text-[#9c9c9c]`}>
@@ -64,8 +63,13 @@ export default function Home() {
             </span>
           </div>
           <div className="h-auto overflow-visible">
+            <Carousal className="h-full flex-shrink-0" />
+          </div>
+        </div>
 
-          <Carousal className="h-full flex-shrink-0"/>
+        <div className="px-6 my-4">
+          <div>
+            <p>Ces produits pourraient vous intéresser</p>
           </div>
         </div>
       </main>

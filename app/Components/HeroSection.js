@@ -47,7 +47,7 @@ function HeroSection() {
   return (
     <div>
       <div className="flex items-center justify-evenly my-3 text-[0.9rem] font-medium text-slate-500 border-b-2 border-slate-200 mx-0 ">
-        <div>
+        <div className="mx-6 px-6">
           <ul className="flex gap-8 items-center justify-evenly">
             {menuItems.map((item) => (
               <li
@@ -65,12 +65,12 @@ function HeroSection() {
           </ul>
         </div>
       </div>
-      <div className="flex gap-2 items-center px-6">
+      <div className="flex gap-2 items-center px-6 mx-6">
         <p>Home</p>
         <GoDotFill className="text-slate-300" />
         <p className="text-slate-400">{currItem}</p>
       </div>
-      <div className="px-6 flex gap-6 my-4">
+      <div className="px-6 flex gap-6 my-4 mx-6">
         <div className="h-[40.74rem] w-[47.5rem]  bg-[#f7f6f4] rounded-lg">
           <div className=" h-[34.5rem] w-[34.5rem] flex justify-center items-center mx-[5rem] my-8 ">
             <Image src={machine} alt="machine-pic" />
