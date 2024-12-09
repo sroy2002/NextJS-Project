@@ -3,6 +3,8 @@ import HeroSection from "./Components/HeroSection";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { HiOutlinePlus } from "react-icons/hi2";
+import Carousal from "./Components/Carousal";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,6 +20,7 @@ export default function Home() {
     <div>
       <main className="">
         <HeroSection />
+        {/* // Description Section  */}
         <div className="px-6 flex gap-4">
           <div className="w-[50%]">
             <p className={`${inter.className} mb-2`}>Description produit</p>
@@ -35,17 +38,34 @@ export default function Home() {
           </div>
           <div className="w-[50%] flex flex-col  justify-center items-center">
             <div className="border border-slate-300 w-full  flex items-center justify-between hover:bg-slate-100 hover:cursor-pointer">
-              <span className="text-left h-[3.8rem] py-4 px-8">Livraisons</span>
+              <span className="text-left h-[3.8rem] py-4 px-8">LIVRAISONS</span>
               <div className=" px-4">
                 <HiOutlinePlus size={23} />
               </div>
             </div>
             <div className="border border-slate-300 w-full  flex items-center justify-between hover:bg-slate-100 hover:cursor-pointer">
-              <span className="text-left h-[3.8rem] py-4 px-8">Questions</span>
+              <span className="text-left h-[3.8rem] py-4 px-8">QUESTIONS</span>
               <div className=" px-4">
                 <HiOutlinePlus size={23} />
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Article Section */}
+
+        <div className="bg-[#fefdfd] mx-6 my-8 p-6">
+          <div className="flex items-center justify-between">
+            <span className={`${inter.className} text-2xl`}>
+              Articles Similaires
+            </span>
+            <span className={`${inter.className} text-sm underline`}>
+              VOIR TOUTE LA COLLECTION
+            </span>
+          </div>
+          <div className="h-auto overflow-visible">
+
+          <Carousal className="h-full flex-shrink-0"/>
           </div>
         </div>
       </main>
