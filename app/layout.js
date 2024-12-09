@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <nav className="">
+        <nav className="my-2">
           <div className="flex gap-4 items-center justify-between px-4">
             <div className="flex flex-col gap-2 items-center justify-center">
               <Image src={logo} width={60} height={60} alt="logo"></Image>
@@ -58,22 +58,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-evenly my-8 text-[0.9rem] font-medium text-slate-500 border-b-2 border-slate-200 mx-0 ">
-            <ul className="flex gap-8 items-center justify-evenly ">
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">ART DE LA TABLE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">MOBILIER</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">NAPPAGE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">MATÉRIEL DE SALLE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">CUISINE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">BARBECUE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">TENTE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">CHAUFFAGE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">PODIUM - PISTE DE DANSE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer hover:border-b-[0.05rem] py-4 border-[#0093d0] ">SON ET LUMIÈRE</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer  hover:border-b-[0.05rem] py-4 border-[#0093d0] ">PACKS</li>
-              <li className="hover:font-semibold hover:text-[#0093D0] cursor-pointer hover:border-b-[0.05rem] py-4 border-[#0093d0] ">CONSOMMABLES</li>
-            </ul>
-          </div>
+         
         </nav>
         {children}
       </body>
