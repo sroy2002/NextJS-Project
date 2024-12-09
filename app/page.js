@@ -1,19 +1,53 @@
-// "use client";
-// import { useState } from "react";
 import Image from "next/image";
 import HeroSection from "./Components/HeroSection";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+import { HiOutlinePlus } from "react-icons/hi2";
 
-
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
+const geist = localFont({
+  src: "../app/fonts/GeistVF.woff",
+  display: "swap",
+});
 
 export default function Home() {
-  // const [currItem, setCurrItem] = useState("Art de la table");
-
-  
-
   return (
     <div>
       <main className="">
-       <HeroSection/>
+        <HeroSection />
+        <div className="px-6 flex gap-4">
+          <div className="w-[50%]">
+            <p className={`${inter.className} mb-2`}>Description produit</p>
+            <p className={`${geist.className} text-sm text-[#9c9c9c]`}>
+              Festi vous propose à la location un/une "Jewel – grand
+              couteau/10pc" pour votre évenement et ce dès 0,35 € / pièce
+              (HTVA). Que ce soit pour votre mariage, une fête d'anniversaire ou
+              du personnel, ce produit a fait l'objet d'une sélection rigoureuse
+              par notre équipe. Il est en location chez nous sous la référence
+              "VAJGC". Nous sommes à votre disposition pour que les événements
+              de nos clients, même en last-minute, soient toujours une réussite.
+              Vous pourrez trouver tout une série d'autre produit à louer de ce
+              type dans la catégorie "Art de la Table".
+            </p>
+          </div>
+          <div className="w-[50%] flex flex-col  justify-center items-center">
+            <div className="border border-slate-300 w-full  flex items-center justify-between hover:bg-slate-100 hover:cursor-pointer">
+              <span className="text-left h-[3.8rem] py-4 px-8">Livraisons</span>
+              <div className=" px-4">
+                <HiOutlinePlus size={23} />
+              </div>
+            </div>
+            <div className="border border-slate-300 w-full  flex items-center justify-between hover:bg-slate-100 hover:cursor-pointer">
+              <span className="text-left h-[3.8rem] py-4 px-8">Questions</span>
+              <div className=" px-4">
+                <HiOutlinePlus size={23} />
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );

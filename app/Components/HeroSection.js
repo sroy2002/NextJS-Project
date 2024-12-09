@@ -10,7 +10,9 @@ import table1 from "@/public/table1.jpeg";
 import table2 from "@/public/table2.jpeg";
 import table3 from "@/public/table3.jpeg";
 import table4 from "@/public/table4.jpeg";
-import { Playfair_Display, Inter, Geist } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
+import localFont from 'next/font/local'
+
 
 const playfair = Playfair_Display({
   display: "swap",
@@ -19,9 +21,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const geist = Geist({
-  display: "swap",
-});
+const geist = localFont({
+  src: '../../app/fonts/GeistVF.woff',
+  display: 'swap',
+})
 
 function HeroSection() {
   const [currItem, setCurrItem] = useState("Art de la table");
