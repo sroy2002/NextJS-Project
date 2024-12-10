@@ -46,14 +46,14 @@ function HeroSection() {
   const imgList = [table1, table2, table3, table4];
   return (
     <div>
-      <div className="flex items-center justify-evenly my-3 text-[0.9rem] font-medium text-slate-500 border-b-2 border-slate-200 mx-0 ">
+      <div className="flex items-center justify-evenly my-3  text-[0.9rem] font-medium text-slate-500 border-b-2 border-slate-200 mx-0 ">
         <div className="mx-6 px-6">
           <ul className="flex gap-8 items-center justify-evenly">
             {menuItems.map((item) => (
               <li
                 key={item}
                 onClick={() => setCurrItem(item)}
-                className={`cursor-pointer text-sm py-2 ${inter.className} ${
+                className={`cursor-pointer text-[0.9rem] py-2 ${inter.className} ${
                   currItem === item
                     ? "font-semibold text-[#0093D0] border-b-[0.05rem] border-[#0093D0]"
                     : "hover:font-semibold hover:text-[#0093D0] hover:border-b-[0.05rem]"
@@ -64,6 +64,7 @@ function HeroSection() {
             ))}
           </ul>
         </div>
+
       </div>
       <div className="flex gap-2 items-center px-6 mx-6">
         <p>Home</p>

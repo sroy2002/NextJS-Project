@@ -68,7 +68,7 @@ function Search() {
         onChange={(e) => {
           setSearchTerm(e.target.value);
         }}
-        className="h-[50px] w-full pl-[15px] bg-[#f9fafb] focus:outline-none"
+        className="h-[50px] w-full pl-[15px] bg-[#f9fafb] focus:outline-none text-sm xl:text-base"
         placeholder="Rechercher un produit"
         onFocus={() => {
           setIsSearch(true);
