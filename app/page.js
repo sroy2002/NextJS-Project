@@ -31,15 +31,15 @@ export default function Home() {
           <div className="w-[50%]">
             <p className={`${inter.className} mb-2`}>Description produit</p>
             <p className={`${geist.className} text-sm text-[#9c9c9c]`}>
-              Festi vous propose à la location un/une "Jewel – grand
-              couteau/10pc" pour votre évenement et ce dès 0,35 € / pièce
-              (HTVA). Que ce soit pour votre mariage, une fête d'anniversaire ou
-              du personnel, ce produit a fait l'objet d'une sélection rigoureuse
+              Festi vous propose à la location un/une &quot;Jewel – grand
+              couteau/10pc&quot; pour votre évenement et ce dès 0,35 € / pièce
+              (HTVA). Que ce soit pour votre mariage, une fête d&apos;anniversaire ou
+              du personnel, ce produit a fait l&apos;objet d&apos;une sélection rigoureuse
               par notre équipe. Il est en location chez nous sous la référence
-              "VAJGC". Nous sommes à votre disposition pour que les événements
+              &quot;VAJGC&quot;. Nous sommes à votre disposition pour que les événements
               de nos clients, même en last-minute, soient toujours une réussite.
-              Vous pourrez trouver tout une série d'autre produit à louer de ce
-              type dans la catégorie "Art de la Table".
+              Vous pourrez trouver tout une série d&apos;autre produit à louer de ce
+              type dans la catégorie &quot;Art de la Table&quot;.
             </p>
           </div>
           <div className="w-[50%] flex flex-col  justify-center items-center">
@@ -93,7 +93,7 @@ export default function Home() {
 
         <div className="my-6 px-6 py-6 pb-[5em] flex flex-col items-center justify-center bg-[#fff9fb]">
           <p className="text-2xl font-medium  mt-4 mb-2">
-            On s’occupe de
+            On s&apos;occupe de
             <span className="text-[#5cd2dd] font-extrabold ">tout</span>
           </p>
           <p className="text-sm text-slate-400">
@@ -137,7 +137,7 @@ export default function Home() {
               <p className="font-medium text-[#6e4955]">
                 Transport & Enlèvement
               </p>
-              <p className="text-sm text-[#8b6d78]">On s’occupe de tout</p>
+              <p className="text-sm text-[#8b6d78]">On s&apos;occupe de tout</p>
             </div>
           </div>
         </div>
