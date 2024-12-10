@@ -12,7 +12,7 @@ const playfair = Playfair_Display({
 });
 
 function CardLarge({ width }) {
-  console.log("Width is:", width);
+
   const [count, setCount] = useState(1);
   const [isHover, setIsHover] = useState(false);
 

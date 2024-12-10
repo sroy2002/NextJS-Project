@@ -5,6 +5,11 @@ import localFont from "next/font/local";
 import { HiOutlinePlus } from "react-icons/hi2";
 import Carousal from "./Components/Carousal";
 import CardLarge from "./Components/CardLarge";
+import p1 from "@/public/p1.png";
+import p2 from "@/public/p2.png";
+import p3 from "@/public/p3.png";
+import p4 from "@/public/p4.png";
+import Feedback from "./Components/Feedback";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -73,10 +78,65 @@ export default function Home() {
             <p>Ces produits pourraient vous intéresser</p>
           </div>
           <div className="flex w-full justify-between ">
-            <CardLarge width="32%"/>
-            <CardLarge width="32%"/>
-            <CardLarge width="32%"/>
+            <CardLarge width="32%" />
+            <CardLarge width="32%" />
+            <CardLarge width="32%" />
           </div>
+        </div>
+
+        <div className="my-6 px-6 py-6 pb-[5em] flex flex-col items-center justify-center bg-[#fff9fb]">
+          <p className="text-2xl font-medium  mt-4 mb-2">
+            On s’occupe de <span className="text-[#5cd2dd] font-extrabold ">tout</span>
+          </p>
+          <p className="text-sm text-slate-400">
+            Office ipsum you must be muted. It meeting commitment busy pain.
+          </p>
+          <div className="flex justify-center items-center gap-8 w-[80%] px-[10rem] mx-auto mt-10">
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-[3rem]">
+                <Image src={p1} alt="pic-1" />
+              </div>
+              <p className="font-medium text-[#6e4955]">
+                Livraison & Reprise
+              </p>
+              <p className="text-sm text-[#8b6d78]">Selon vos besoins</p>
+            </div>
+
+            <div className="w-[20%] border-t border-[#a48f98]"></div>
+
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-[3rem]">
+                <Image src={p2} alt="pic-2" />
+              </div>
+              <p className="font-medium text-[#6e4955]">Nettoyage</p>
+              <p className="text-sm text-[#8b6d78]">Selon vos besoins</p>
+            </div>
+
+            <div className="w-[20%] border-t border-[#a48f98]"></div>
+
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-[3rem]">
+                <Image src={p3} alt="pic-3" />
+              </div>
+              <p className="font-medium text-[#6e4955]">Commande Illimitée</p>
+              <p className="text-sm text-[#8b6d78]">Tout est possible</p>
+            </div>
+
+            <div className="w-[20%] border-t border-[#a48f98]"></div>
+
+            <div className="flex flex-col items-center gap-2 text-center">
+              <div className="w-[3rem]">
+                <Image src={p4} alt="pic-4" />
+              </div>
+              <p className="font-medium text-[#6e4955]">
+                Transport & Enlèvement
+              </p>
+              <p className="text-sm text-[#8b6d78]">On s’occupe de tout</p>
+            </div>
+          </div>
+        </div>
+        <div className="m-6 mt-[8rem] px-4">
+          <Feedback/>
         </div>
       </main>
     </div>

@@ -56,7 +56,7 @@ function Search() {
   return (
     // search bar
     <div
-      className={`bg-[#f9fafb] flex items-center rounded-md ${
+      className={`bg-[#f9fafb] w-full flex items-center rounded-md ${
         isSearch
           ? "bg-white border-2 border-[#0093D0]"
           : "bg-[#f9fafb] border border-gray-300"
@@ -68,7 +68,7 @@ function Search() {
         onChange={(e) => {
           setSearchTerm(e.target.value);
         }}
-        className="h-[50px] w-[768px] pl-[15px] bg-[#f9fafb] focus:outline-none"
+        className="h-[50px] w-full pl-[15px] bg-[#f9fafb] focus:outline-none"
         placeholder="Rechercher un produit"
         onFocus={() => {
           setIsSearch(true);
