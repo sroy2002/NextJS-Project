@@ -10,6 +10,7 @@ import "./globals.css";
 import Search from "./Components/Search";
 
 const poppins = Poppins({
+  subsets:['latin'],
   weight: "400",
   display: "swap",
 });

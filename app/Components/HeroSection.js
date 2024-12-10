@@ -15,9 +15,11 @@ import localFont from 'next/font/local'
 
 
 const playfair = Playfair_Display({
+  subsets:['latin'],
   display: "swap",
 });
 const inter = Inter({
+  subsets:['latin'],
   display: "swap",
 });
 
