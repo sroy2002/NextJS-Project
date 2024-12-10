@@ -103,7 +103,7 @@ function HeroSection() {
               39,50€
             </span>
             <span className={`${geist.className} text-slate-400 ml-1`}>
-              {" "}
+              
               / pièce
             </span>
           </div>

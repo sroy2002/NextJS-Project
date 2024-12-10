@@ -45,7 +45,7 @@ export default function Home() {
           <div className="w-[50%] flex flex-col  justify-center items-center">
             <div className="border border-slate-300 w-full  flex items-center justify-between hover:bg-slate-100 hover:cursor-pointer">
               <span className="text-left h-[3.8rem] py-4 px-8">LIVRAISONS</span>
-              <div className=" px-4">
+              <div className="px-4">
                 <HiOutlinePlus size={23} />
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
 
         <div className="my-6 px-6 py-6 pb-[5em] flex flex-col items-center justify-center bg-[#fff9fb]">
           <p className="text-2xl font-medium  mt-4 mb-2">
-            On s’occupe de{" "}
+            On s’occupe de
             <span className="text-[#5cd2dd] font-extrabold ">tout</span>
           </p>
           <p className="text-sm text-slate-400">

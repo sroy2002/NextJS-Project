@@ -109,7 +109,7 @@ function Search() {
                       </div>
                       {item.subText && (
                         <p className="relative top-4 right-[5.7rem] text-[0.6rem] text-slate-400">
-                          {" "}
+                          
                           {item.subText}
                         </p>
                       )}

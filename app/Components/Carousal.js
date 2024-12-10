@@ -26,7 +26,7 @@ function Carousal() {
   return (
     <div className="relative w-full h-auto overflow-y-visible">
       <div  onClick={scrollLeft}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-200">
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#5cd2dd] text-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-200">
         <div>
           <FaArrowLeft />
         </div>
@@ -52,7 +52,7 @@ function Carousal() {
           ))}
       </div>
       <div onClick={scrollRight}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-200">
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#5cd2dd] text-white shadow-lg rounded-full p-2 z-10 hover:bg-gray-200">
         <div>
           <FaArrowRight />
         </div>
