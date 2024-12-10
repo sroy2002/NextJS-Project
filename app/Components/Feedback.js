@@ -23,7 +23,7 @@ function Feedback() {
         className={`${inter.className} bg-[#fff3f9] rounded-2xl w-full p-10 pb-[2rem]`}
       >
         <p className="w-full text-3xl font-bold mb-4">
-          S’inscrire & économiser <span>10%</span>{" "}
+          S’inscrire & économiser <span className="text-[#5cd2dd]">10%</span>
         </p>
         <p className="text-[0.7rem] text-slate-400">
           Office ipsum you must be muted. Synergize helicopter prioritize anyway

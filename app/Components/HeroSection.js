@@ -53,7 +53,7 @@ function HeroSection() {
               <li
                 key={item}
                 onClick={() => setCurrItem(item)}
-                className={`cursor-pointer py-4 ${inter.className} ${
+                className={`cursor-pointer text-sm py-2 ${inter.className} ${
                   currItem === item
                     ? "font-semibold text-[#0093D0] border-b-[0.05rem] border-[#0093D0]"
                     : "hover:font-semibold hover:text-[#0093D0] hover:border-b-[0.05rem]"

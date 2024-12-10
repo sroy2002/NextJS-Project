@@ -26,10 +26,10 @@ export default function RootLayout({ children }) {
         <nav className="my-2">
           <div className="flex gap-4 items-center justify-between px-4">
             <div className="flex flex-col gap-2 items-center justify-center min-w-[30%] xl:min-w-[10%] 2xl:min-w-[5%] ">
-              <div className="w-full h-full">
+              <div className="w-full h-full flex justify-center items-center">
                 <Image src={logo} width={60} height={60} alt="logo"></Image>
               </div>
-              <div className="w-full h-full">
+              <div className="w-full h-full flex justify-center items-center">
                 <Image
                   src={branding}
                   width={130}

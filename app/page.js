@@ -10,6 +10,7 @@ import p2 from "@/public/p2.png";
 import p3 from "@/public/p3.png";
 import p4 from "@/public/p4.png";
 import Feedback from "./Components/Feedback";
+import Footer from "./Components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -74,9 +75,15 @@ export default function Home() {
         </div>
 
         <div className="px-10  my-4 w-full overflow-x-hidden">
-          <div className="text-2xl my-4 font-medium">
-            <p>Ces produits pourraient vous intéresser</p>
+          <div className="flex items-center justify-between">
+            <div className="text-2xl my-4 font-medium">
+              <p>Ces produits pourraient vous intéresser</p>
+            </div>
+            <span className={`${inter.className} text-sm underline`}>
+              VOIR TOUTE LA COLLECTION
+            </span>
           </div>
+
           <div className="flex w-full justify-between ">
             <CardLarge width="32%" />
             <CardLarge width="32%" />
@@ -86,7 +93,8 @@ export default function Home() {
 
         <div className="my-6 px-6 py-6 pb-[5em] flex flex-col items-center justify-center bg-[#fff9fb]">
           <p className="text-2xl font-medium  mt-4 mb-2">
-            On s’occupe de <span className="text-[#5cd2dd] font-extrabold ">tout</span>
+            On s’occupe de{" "}
+            <span className="text-[#5cd2dd] font-extrabold ">tout</span>
           </p>
           <p className="text-sm text-slate-400">
             Office ipsum you must be muted. It meeting commitment busy pain.
@@ -96,9 +104,7 @@ export default function Home() {
               <div className="w-[3rem]">
                 <Image src={p1} alt="pic-1" />
               </div>
-              <p className="font-medium text-[#6e4955]">
-                Livraison & Reprise
-              </p>
+              <p className="font-medium text-[#6e4955]">Livraison & Reprise</p>
               <p className="text-sm text-[#8b6d78]">Selon vos besoins</p>
             </div>
 
@@ -136,9 +142,14 @@ export default function Home() {
           </div>
         </div>
         <div className="m-6 mt-[8rem] px-4">
-          <Feedback/>
+          <Feedback />
         </div>
       </main>
+      <div className="w-full border-b border-b-slate-200 py-8"></div>
+      <div className="m-6 p-6">
+
+      <Footer/>
+      </div>
     </div>
   );
 }
