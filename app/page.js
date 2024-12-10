@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import { HiOutlinePlus } from "react-icons/hi2";
 import Carousal from "./Components/Carousal";
+import CardLarge from "./Components/CardLarge";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -67,9 +68,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="px-6 my-4">
-          <div>
+        <div className="px-10  my-4 w-full overflow-x-hidden">
+          <div className="text-2xl my-4 font-medium">
             <p>Ces produits pourraient vous intéresser</p>
+          </div>
+          <div className="flex w-full justify-between ">
+            <CardLarge width="32%"/>
+            <CardLarge width="32%"/>
+            <CardLarge width="32%"/>
           </div>
         </div>
       </main>

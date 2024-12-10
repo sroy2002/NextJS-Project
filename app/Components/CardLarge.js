@@ -11,17 +11,19 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-function CardLarge() {
+function CardLarge({ width }) {
+  console.log("Width is:", width);
   const [count, setCount] = useState(1);
   const [isHover, setIsHover] = useState(false);
 
   return (
     <div
-      className="my-6  bg-[#f9f7f5] w-[20.65rem] h-[26.5rem] hover:cursor-pointer transition-all duration-300 ease-in-out"
+      style={{ width: width }}
+      className={`my-6  bg-[#f9f7f5]   h-[26.5rem] hover:cursor-pointer transition-all duration-300 ease-in-out`}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <div className="w-full  flex flex-col rounded-md ">
+      <div className="w-full  flex flex-col rounded-md  ">
         <div className="flex items-center justify-between py-3 px-3">
           <div>
             <CiHeart size={25} />
@@ -40,37 +42,45 @@ function CardLarge() {
           </div>
         </div>
         <div
-          className={` bg-[#f9f7f5] w-full flex flex-col items-center justify-center rounded-lg transform `}
+          className={` bg-[#f9f7f5] w-full flex flex-col items-center justify-center rounded-lg`}
         >
           <div className="relative w-full h-[15rem]">
             {/* Normal Image */}
             <div
-              className={`absolute inset-0 transition-opacity duration-300 ${
+              className={`absolute inset-0 mx-6 py-4 transition-opacity duration-300 ${
                 isHover ? "opacity-0" : "opacity-100"
               }`}
             >
-              <Image
-                src={tableNormal}
-                alt="table-normal"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md"
-              />
+              <div className="flex justify-center items-center object-cover h-full w-full">
+                <Image
+                  src={tableNormal}
+                  alt="table-normal"
+                  layout="intrinsic"
+                  objectFit="cover"
+                  className="rounded-md"
+                  width={300}
+                  height={300}
+                />
+              </div>
             </div>
 
             {/* Zoomed Image */}
             <div
-              className={`absolute inset-0 transition-opacity duration-300 ${
+              className={`absolute m-4 inset-0 transition-opacity duration-300 ${
                 isHover ? "opacity-100" : "opacity-0"
               }`}
             >
-              <Image
-                src={tableZoomed}
-                alt="table-zoomed"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-md"
-              />
+              <div className="flex justify-center items-center h-full w-full">
+                <Image
+                  src={tableZoomed}
+                  alt="table-zoomed"
+                  layout="intrinsic"
+                  objectFit="cover"
+                  className="rounded-md"
+                  width={300}
+                  height={300}
+                />
+              </div>
             </div>
           </div>
           <div

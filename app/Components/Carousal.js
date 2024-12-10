@@ -47,7 +47,7 @@ function Carousal() {
               className="shrink-0 h-auto snap-start"
               style={{ scrollSnapAlign: "start", height:"100%" }}
             >
-              <CardLarge />
+              <CardLarge width="22.6rem" />
             </div>
           ))}
       </div>
